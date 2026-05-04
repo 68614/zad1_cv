@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodion Samokhvalov – CV</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link id="themeStylesheet" rel="stylesheet" href="red.css">
+</head>
+<body>
+
+<header>
+    <h1>Rodion Samokhvalov</h1>
+    <p class="subtitle">Web Developer | Digital Marketing Specialist</p>
+    <img src="photo.jpg" alt="Zdjęcie Rodion Samokhvalov">
+</header>
+
+<div style="padding: 20px;">
+    <button id="themeBtn">Zmień motyw</button>
+    <button id="toggleBtn">Ukryj / Pokaż umiejętności</button>
+</div>
+
+<main>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Email: <a href="mailto:samokhvalovrodion@gmail.com">samokhvalovrodion@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+48666666666">666 666 666</a></p>
+        <p>Miasto: Warszawa</p>
+        <p>
+            GitHub: 
+            <a href="https://github.com/radosmm6" target="_blank">github.com/radosmm6</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>O mnie</h2>
+        <p>
+            Jestem Web Developerem oraz właścicielem agencji marketingowej specjalizującej się w tworzeniu 
+            stron internetowych dla sektora B2B.
+        </p>
+    </section>
+
+    <section id="skillsSection">
+        <h2>Umiejętności</h2>
+        <ul id="skillsList"></ul>
+    </section>
+    <section>
+    <h2>Projekty</h2>
+    <ul id="projectsList"></ul>
+</section>
+
+    <section>
+        <h2>Doświadczenie</h2>
+        <p>Freelancer – Web Development</p>
+    </section>
+    <section>
+    <h2>Formularz kontaktowy</h2>
+
+    <form id="contactForm" novalidate>
+        <label>Imię:</label><br>
+        <input type="text" id="name"><br>
+        <span class="error" id="nameError"></span><br>
+
+        <label>Nazwisko:</label><br>
+        <input type="text" id="surname"><br>
+        <span class="error" id="surnameError"></span><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email"><br>
+        <span class="error" id="emailError"></span><br>
+
+        <label>Wiadomość:</label><br>
+        <textarea id="message"></textarea><br>
+        <span class="error" id="messageError"></span><br>
+
+        <button type="submit">Wyślij</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Rodion Samokhvalov</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

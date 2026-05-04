@@ -1,0 +1,18 @@
+{
+  "skills": [
+    "HTML5 & CSS3",
+    "Podstawy JavaScript",
+    "Projektowanie stron",
+    "Marketing cyfrowy"
+  ],
+  "projects": [
+    {
+      "title": "Strona CV",
+      "desc": "Nowoczesne CV online"
+    },
+    {
+      "title": "Landing Page",
+      "desc": "Strona sprzedażowa dla produktu"
+    }
+  ]
+}
