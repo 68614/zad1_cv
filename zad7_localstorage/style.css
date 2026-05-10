@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fff5f5;
+    padding: 30px;
+}
+
+header {
+    background: linear-gradient(135deg, #7f1d1d, #ef4444);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 4px solid white;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #ef4444;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #b91c1c;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #b91c1c;
+}
+
+footer {
+    background: #7f1d1d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* === LocalStorage Section === */
+
+.ls-info {
+    background: #fff0f0;
+    border: 1px solid #fca5a5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #7f1d1d;
+}
+
+.ls-info span {
+    font-weight: 600;
+}
+
+.add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid #fca5a5;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+    min-width: 200px;
+}
+
+.add-form input:focus {
+    border-color: #ef4444;
+}
+
+.add-form button {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* Notes list */
+#notesList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#notesList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff5f5;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.note-text {
+    flex: 1;
+    color: #1f2937;
+    word-break: break-word;
+}
+
+.note-date {
+    font-size: 11px;
+    color: #9ca3af;
+    margin: 0 12px;
+    white-space: nowrap;
+}
+
+.delete-btn {
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #fca5a5;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.delete-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 14px;
+    padding: 20px 0;
+    font-style: italic;
+}
+
+.clear-btn {
+    background: transparent;
+    color: #9ca3af;
+    border: 1px solid #d1d5db;
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.clear-btn:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.counter {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.counter strong {
+    color: #ef4444;
+}

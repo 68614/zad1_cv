@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodion Samokhvalov – CV | Zadanie 7: Local Storage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Rodion Samokhvalov</h1>
+    <p class="subtitle">Web Developer | Digital Marketing Specialist</p>
+    <img src="photo.jpg" alt="Zdjęcie Rodion Samokhvalov">
+</header>
+
+<main>
+
+    <!-- Kontakt -->
+    <section>
+        <h2>Kontakt</h2>
+        <p>Email: <a href="mailto:samokhvalovrodion@gmail.com">samokhvalovrodion@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+48666666666">666 666 666</a></p>
+        <p>Miasto: Warszawa</p>
+        <p>GitHub: <a href="https://github.com/radosmm6" target="_blank">github.com/radosmm6</a></p>
+    </section>
+
+    <!-- Zadanie 7: Local Storage – Moje Notatki -->
+    <section>
+        <h2>📝 Moje Notatki <small style="font-size:13px; color:#9ca3af; font-weight:400;">(Zadanie 7 – Local Storage)</small></h2>
+
+        <!-- Info o localStorage -->
+        <div class="ls-info">
+            💾 Dane są zapisywane w <span>localStorage</span> przeglądarki — przetrwają odświeżenie strony i ponowne wejście.
+        </div>
+
+        <!-- Formularz dodawania -->
+        <div class="add-form">
+            <input
+                type="text"
+                id="noteInput"
+                placeholder="Wpisz notatkę, zadanie lub projekt..."
+                maxlength="200"
+            >
+            <button id="addBtn">➕ Dodaj</button>
+        </div>
+
+        <!-- Licznik -->
+        <p class="counter" id="counter">Notatek: <strong>0</strong></p>
+
+        <!-- Lista notatek -->
+        <ul id="notesList">
+            <li class="empty-msg" id="emptyMsg">Brak notatek. Dodaj pierwszą! 👆</li>
+        </ul>
+
+        <!-- Usuń wszystkie -->
+        <button class="clear-btn" id="clearAllBtn">🗑️ Usuń wszystkie notatki</button>
+    </section>
+
+    <!-- O mnie -->
+    <section>
+        <h2>O mnie</h2>
+        <p>
+            Jestem Web Developerem oraz właścicielem agencji marketingowej specjalizującej się
+            w tworzeniu stron internetowych dla sektora B2B.
+        </p>
+    </section>
+
+    <!-- Doświadczenie -->
+    <section>
+        <h2>Doświadczenie</h2>
+        <p>Freelancer – Web Development</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Rodion Samokhvalov | Zadanie 7 – Local Storage</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
